@@ -1,0 +1,8 @@
+{% extends 'app/footer.html' %}
+{% load static %}
+{% block content %}
+    <div class="pet-entry">
+      <h2><a href="">{{pet.name}}</a></h2>
+      <p>{{pet.description}}</p>
+    </div>
+{% endblock content %}

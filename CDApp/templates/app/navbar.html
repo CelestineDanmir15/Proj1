@@ -1,4 +1,15 @@
-<header> 
-    <a href="{% url 'Home' %}">Home</a>
-    <a href="{% url 'About' %}">About</a>
+<header>
+    <nav class="navbar">
+        <a href="{% url 'Home' %}" class="logo">MySite</a>
+        <ul class="nav-links">
+            <li><a href="{% url 'Home' %}">Home</a></li>
+            <li><a href="{% url 'About' %}">About</a></li>
+            <li><a href="{% url 'Pet' %}">Animals</a></li>
+        </ul>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 </header>
